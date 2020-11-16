@@ -1,0 +1,114 @@
+.header {
+    margin: 0;
+    font-family: 'roboto';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+#Itube-logo {
+    height: 20px;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding: 10px 24px 10px 24px;
+    text-decoration: none;
+}
+
+.menu-bar>span {
+    margin: 0 0 0 24px;
+}
+
+.search-bar {
+    margin: auto auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search-bar .search-input {
+    width: 60%;
+    font-size: inherit;
+    padding: .3rem 0.8rem;
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+}
+
+.search-bar .search-input::placeholder {
+    font-weight: 500;
+}
+
+.search-bar .search-input:focus {
+    box-shadow: 0 0 2px rgb(116, 208, 233);
+    border: 1px solid rgb(116, 208, 233);
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    padding: 0.15rem 1.25rem;
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(236, 236, 236);
+    border-left: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0 0 2px rgb(226, 226, 226);
+}
+
+.search-btn:hover #s {
+    fill: black;
+}
+
+.menu-icons {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-channel-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #AAA;
+    margin: 0;
+}
+
+svg {
+    fill: #606060;
+}
+
+#s1 {
+    display: none;
+}
+
+#go-back {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.15rem 0.50rem 0.15rem 0;
+    background-color: white;
+    display: none;
+}
+
+#sidebar-btn {
+    outline: none;
+    border: none;
+    background-color: white;
+}
